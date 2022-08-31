@@ -6,7 +6,7 @@ const Menu = () => {
             <div className="sidebar-sticky pt-3">
                 <ul className="nav flex-column">
                     <li className="nav-item">
-                        <a className="nav-link active" href="#">
+                        <a className="nav-link active" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Facebook_New_Logo_%282015%29.svg/1200px-Facebook_New_Logo_%282015%29.svg.png">
                             Products
                         </a>
                     </li>

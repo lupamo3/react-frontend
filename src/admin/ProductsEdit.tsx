@@ -11,6 +11,7 @@ const ProductsEdit = (props: PropsWithRef<any>) => {
     useEffect(() => {
         (
             async () => {
+                console.log("show this id", props.match.params.id)
                 const response = await fetch(`http://localhost:8000/api/products/${props.match.params.id}`);
 
                 const product: Product = await response.json();
@@ -19,7 +20,7 @@ const ProductsEdit = (props: PropsWithRef<any>) => {
                 setImage(product.image)
             }
         )();
-    }, []);
+    }, [props.match.params.id]);
 
     const submit = async (e: SyntheticEvent) => {
         e.preventDefault();

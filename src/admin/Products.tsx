@@ -53,14 +53,14 @@ const Products = () => {
                             return (
                                 <tr key={p.id}>
                                     <td>{p.id}</td>
-                                    <td><img src={p.image} height="180"/></td>
+                                    <td><img src={p.image} alt="product display" height="180"/></td>
                                     <td>{p.title}</td>
                                     <td>{p.likes}</td>
                                     <td>
                                         <div className="btn-group mr-2">
                                             <Link to={`/admin/products/${p.id}/edit`}
                                                   className="btn btn-sm btn-outline-secondary">Edit</Link>
-                                            <a href="#" className="btn btn-sm btn-outline-secondary"
+                                            <a href="https://www.nytimes.com/wirecutter/blog/delete-your-old-accounts/" className="btn btn-sm btn-outline-secondary"
                                                onClick={() => del(p.id)}
                                             >Delete</a>
                                         </div>
